@@ -1,6 +1,6 @@
 import React from "react";
 import Showcase from "../Components/Showcase/Showcase";
-import { CgProfile } from "react-icons/cg";
+import { CgArrowTopRight, CgProfile } from "react-icons/cg";
 import IMAGES from "../assets/Images";
 import "../Components/Styles/HomeStyle.css";
 import { Button } from "react-bootstrap";
@@ -24,8 +24,8 @@ const Home = () => {
 			<div className="container my-5">
 				<h1 className="display-5 mb-4">WHAT WE DO WE DO BEST!</h1>
 				<div className="row">
-					<div className="col-4">
-						<div className="p-5 bg-light border shadow rounded-3">
+					<div className="col-12 col-md-4 p-2">
+						<div id="cardBg" className="p-5 bg-light border shadow rounded-3">
 							<div className="d-flex flex-column gap-4">
 								<div>
 									<CgProfile size={"40"} />
@@ -34,14 +34,13 @@ const Home = () => {
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									Vitae, quaerat quia, at consequuntur distinctio dicta, a
-									soluta ducimus ut officiis quisquam sapiente debitis cum
-									asperiores est. Iure possimus quae eos?
+									soluta ducimus ut officiis.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div className="col-4">
-						<div className="p-5 bg-light border shadow rounded-3">
+					<div className="col-12 col-md-4 p-2">
+						<div id="cardBg" className="p-5 bg-light border shadow rounded-3">
 							<div className="d-flex flex-column gap-4">
 								<div>
 									<CgProfile size={"40"} />
@@ -50,14 +49,13 @@ const Home = () => {
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									Vitae, quaerat quia, at consequuntur distinctio dicta, a
-									soluta ducimus ut officiis quisquam sapiente debitis cum
-									asperiores est. Iure possimus quae eos?
+									soluta ducimus ut officiis.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div className="col-4">
-						<div className="p-5 bg-light border shadow rounded-3">
+					<div className="col-12 col-md-4 p-2">
+						<div id="cardBg" className="p-5 bg-light border shadow rounded-3">
 							<div className="d-flex flex-column gap-4">
 								<div>
 									<CgProfile size={"40"} />
@@ -66,8 +64,7 @@ const Home = () => {
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									Vitae, quaerat quia, at consequuntur distinctio dicta, a
-									soluta ducimus ut officiis quisquam sapiente debitis cum
-									asperiores est. Iure possimus quae eos?
+									soluta ducimus ut officiis.
 								</p>
 							</div>
 						</div>
@@ -76,7 +73,7 @@ const Home = () => {
 			</div>
 			{/*  */}
 			<div
-				id="aboutUs"
+				id="simpleShinyBg"
 				className="d-flex flex-column align-items-center justify-content-center text-light"
 			>
 				<div className="container py-5">
@@ -115,6 +112,42 @@ const Home = () => {
 									</Button>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contactUsPrev" className="py-5">
+				<div className="row container mx-auto">
+					<div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+						<div className="">
+							<h4>WHY CHOOSE US?</h4>
+							<h1 className="display-5 fw-bold">
+								We maintain health, environments through our services
+							</h1>
+							<p>
+								Our environment has a large impact on our health and well being,
+								an important part of living well is doing our part to take care
+								of the environment.
+							</p>
+
+							<Button size="lg" variant="warning">
+								Contact Us <CgArrowTopRight />
+							</Button>
+						</div>
+					</div>
+					<div className="col-12 col-md-6">
+						<div className="text-center">
+							<img
+								src={IMAGES.image6}
+								className="rounded-5"
+								style={{
+									width: "100%",
+									maxWidth: "450px",
+									height: "100%",
+									maxHeight: "600px",
+								}}
+								alt=""
+							/>
 						</div>
 					</div>
 				</div>
